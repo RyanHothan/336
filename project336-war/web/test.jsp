@@ -1,20 +1,17 @@
 <%-- 
-    Document   : congrats
-    Created on : Apr 12, 2015, 3:39:35 PM
-    Author     : Ryan Hothan
+    Document   : test
+    Created on : Apr 12, 2015, 7:15:09 PM
+    Author     : Javier
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" 
-           uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Congrats page</title>
+        <title>JSP Page</title>
     </head>
     <body>
-        <h1>Congratulations!</h1>
         <h2>param</h2>
         <table border="1">
             <c:forEach items="${param}" var="i">

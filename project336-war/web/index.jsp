@@ -11,6 +11,8 @@
 <script src="./js/jquery-2.1.3.min.js"></script>
 <script src="./js/javascript.js"></script>
 <title>developerWorks registration</title>
+<%@ taglib prefix="c" 
+           uri="http://java.sun.com/jsp/jstl/core" %>
 </head>
 <body id="ibm-com" class="v17" aria-busy="false">
 
@@ -48,11 +50,12 @@
                         <div id="ibm-content-main">
                             <!-- Begin 6-4 6-2 grid -->
                             <div class="ibm-columns">
+                                <form method="post" action="validateEmail" class="ibm-row-form" name="register" id="registerform">
                                 <!-- Begin 6-4 grid -->
                                 <div class="ibm-col-6-4">				
                                     <p>Thank you for registering with IBM developerWorks. To  simplify things, you can use the IBM ID and password that you designate below across IBM.</p>
                                     <p>Asterisks (<span class="ibm-required">*</span>) indicate fields required to complete this transaction.</p>
-                                    <form method="post" action="validateEmail" class="ibm-row-form" name="register" id="registerform">
+                                    
                                         <h2 class="ibm-inner-subhead">Basic registration information</h2>
                                         <div class="ibm-columns">
                                             <div class="ibm-col-2-1">
@@ -107,7 +110,7 @@
                                         <span class="ibm-additional-info dw-lc-labeloverride dw-lc-important-adjust ibm-item-note">(Required for warranty)</span></label>
                                     <span>
                                         <select name="CountryOfRes" id="countryResidence">				
-                                            <option selected="\&quot;selected\&quot;" value="">Select one</option>								
+                                            <option selected= "selected" value=""> Select one</option>								
                                             <option value="AF">Afghanistan</option>
                                             <option value="AL">Albania</option>
                                             <option value="DZ">Algeria</option>
@@ -271,7 +274,8 @@
                 <!-- OVERLAY ENDS HERE -->
             </div>
         </div></div>
-</div>
+
 <div id="ibm-metrics">
     <a id="icon-id05921531631611288"><img style="border: none; cursor:pointer;" onerror="truste.eu.showSeal()" alt="TRUSTe Icon" src="./developerWorks/get"></a></div>
+    <a href="test.jsp" >test</a>
 </body></html>

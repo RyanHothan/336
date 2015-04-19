@@ -13,7 +13,6 @@
 <title>Developer Works registration</title>
 </head>
 <body id="ibm-com" class="v17" aria-busy="false">
-    <jsp:useBean id='b' class='tools.FormData' scope='application'/>        
     <div id="ibm-top" class="ibm-landing-page ibm-no-scroll"><img src="./developerWorks/ibm_logo_print.png" width="43" height="15" id="ibm-print-masthead" alt="IBM Print">
 
         <!-- MASTHEAD_BEGIN -->

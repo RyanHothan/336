@@ -35,7 +35,6 @@ public class validateEmail extends HttpServlet
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException
     {
- 
         response.setContentType("text/html;charset=UTF-8");
         FormData formData = new FormData();
         formData.setEmail(request.getParameter("UserID"));
@@ -54,6 +53,7 @@ public class validateEmail extends HttpServlet
         formData.setCustomQuestion(request.getParameter("custom_question"));
         request.getServletContext().setAttribute("b", formData);
         String url;
+        
         if(formData.isValid(formData.getEmail()))
         {
             url = "congrats.jsp";
