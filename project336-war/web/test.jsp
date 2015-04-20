@@ -26,11 +26,11 @@
         <table border="1">
             <tr>
                 <td>First Name</td>
-                <td>${b.fName}</td>
+                <td>${b.firstName}</td>
             </tr>
             <tr>
                 <td>Last Name</td>
-                <td>${b.lName}</td>
+                <td>${b.lastName}</td>
             </tr>
             <tr>
                 <td>Email</td>
@@ -67,10 +67,6 @@
             <tr>
                 <td>Security Answer</td>
                 <td>${b.securityAnswer}</td>
-            </tr>
-            <tr>
-                <td>Custom Question</td>
-                <td>${b.customQuestion}</td>
             </tr>
             <tr>
                 <td>Contact By Email</td>

@@ -8,6 +8,7 @@ package tools;
 import java.beans.*;
 import java.io.Serializable;
 
+
 /**
  *
  * @author Javier
@@ -15,8 +16,8 @@ import java.io.Serializable;
 public class FormData implements Serializable
 {
 
-    private String fName;
-    private String lName;
+    private String firstName;
+    private String lastName;
     private String email;
 
     private String password;
@@ -27,26 +28,23 @@ public class FormData implements Serializable
     private String language;
     private String securityQuestion;
     private String securityAnswer;
-    private String customQuestion;
 
     
-    public boolean contactByEmail;
-    public boolean contactByOther;
-    private PropertyChangeSupport propertySupport;
+    private boolean contactByEmail;
+    private boolean contactByOther;
 
     public FormData()
     {
-        propertySupport = new PropertyChangeSupport(this);
     }
 
-    public String getfName()
+    public String getFirstName()
     {
-        return fName;
+        return firstName;
     }
 
-    public String getlName()
+    public String getLastName()
     {
-        return lName;
+        return lastName;
     }
 
     public String getPassword()
@@ -103,30 +101,20 @@ public class FormData implements Serializable
     {
         return email;
     }
-    
-    public String getCustomQuestion()
-    {
-        return customQuestion;
-    }
-
-    public void setCustomQuestion(String customQuestion)
-    {
-        this.customQuestion = customQuestion;
-    }
 
     public void setEmail(String email)
     {
         this.email = email;
     }
 
-    public void setfName(String fName)
+    public void setFirstName(String firstName)
     {
-        this.fName = fName;
+        this.firstName = firstName;
     }
 
-    public void setlName(String lName)
+    public void setLastName(String lastName)
     {
-        this.lName = lName;
+        this.lastName = lastName;
     }
 
     public void setPassword(String password)
@@ -177,16 +165,6 @@ public class FormData implements Serializable
     public void setContactByOther(boolean contactByOther)
     {
         this.contactByOther = contactByOther;
-    }
-
-    public void addPropertyChangeListener(PropertyChangeListener listener)
-    {
-        propertySupport.addPropertyChangeListener(listener);
-    }
-
-    public void removePropertyChangeListener(PropertyChangeListener listener)
-    {
-        propertySupport.removePropertyChangeListener(listener);
     }
     
     public boolean isValid(String email)

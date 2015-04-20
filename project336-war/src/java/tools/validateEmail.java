@@ -38,8 +38,8 @@ public class validateEmail extends HttpServlet
         response.setContentType("text/html;charset=UTF-8");
         FormData formData = new FormData();
         formData.setEmail(request.getParameter("UserID"));
-        formData.setfName(request.getParameter("FName"));
-        formData.setlName(request.getParameter("LName"));
+        formData.setFirstName(request.getParameter("FName"));
+        formData.setLastName(request.getParameter("LName"));
         formData.setAlias(request.getParameter("alias"));
         formData.setCity(request.getParameter("City"));
         formData.setPassword(request.getParameter("Password"));
@@ -50,7 +50,6 @@ public class validateEmail extends HttpServlet
         formData.setContactByOther(Boolean.valueOf(request.getParameter("NC_CHECK_OTHER")));
         formData.setSecurityQuestion(request.getParameter("SecurityQues"));
         formData.setSecurityAnswer(request.getParameter("SecurityAns"));
-        formData.setCustomQuestion(request.getParameter("custom_question"));
         request.getServletContext().setAttribute("b", formData);
         String url;
         

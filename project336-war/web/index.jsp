@@ -164,12 +164,6 @@
                                             </span>
                                         </p>
                                     </div>
-                                    <div class="ibm-col-2-1">
-                                        <p id="customquestioncontainer" style="display:none;">
-                                            <label for="custom_question">Place a question in this text field.</label>
-                                            <span><input name="custom_question" id="custom_question" size="42" type="text" value=""></span>
-                                        </p>
-                                    </div>
                                 </div>
                                 <p>
                                     <label for="SecurityAns">Answer to security question:<span class="ibm-required">*</span></label>

@@ -57,13 +57,13 @@
                                             <div class="ibm-col-2-1">
                                                 <p>
                                                     <label for="FName">First name:<span class="ibm-required">*</span></label>
-                                                    <span><input name="FName" id="FName" size="36" type="text" value="${b.fName}"></span>
+                                                    <span><input name="FName" id="FName" size="36" type="text" value="${b.firstName}"></span>
                                                 </p>
                                             </div>
                                             <div class="ibm-col-2-1">
                                                 <p>
                                                     <label for="LName">Last name:<span class="ibm-required">*</span></label>
-                                                    <span><input name="LName" id="LName" size="36" type="text" value="${b.lName}"></span>
+                                                    <span><input name="LName" id="LName" size="36" type="text" value="${b.lastName}"></span>
                                                 </p>
                                             </div>
                                         </div>
@@ -158,12 +158,6 @@
                                                     <option value="country">In what country were you born?</option>
                                                 </select>
                                             </span>
-                                        </p>
-                                    </div>
-                                    <div class="ibm-col-2-1">
-                                        <p id="customquestioncontainer" style="display:none;">
-                                            <label for="custom_question">Place a question in this text field.</label>
-                                            <span><input name="custom_question" id="custom_question" size="42" type="text" value="${b.customQuestion}"></span>
                                         </p>
                                     </div>
                                 </div>
