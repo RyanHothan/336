@@ -26,12 +26,14 @@
                     <td>${i.value}</td>
                 </tr>
             </c:forEach>
-
         </table>
-        <h2> test bean </h2>
+        <h2> Printed using Custom Tags </h2>
         <table border="1">
             <myLib:myBean bean="${b}">
-                <tr><td>${name}</td><td>${value}</td></tr>
+                <tr>
+                    <td>${name}</td>
+                    <td>${value}</td>
+                </tr>
             </myLib:myBean>
         </table>
         <table border="1">
