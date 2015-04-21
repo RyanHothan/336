@@ -49,7 +49,7 @@ public class BeanReader extends SimpleTagSupport
                     frag.invoke(out);
                 }
             }
-            out.flush();
+                                out.flush();
         } catch (Exception ex)
         {
             System.out.println("booger");

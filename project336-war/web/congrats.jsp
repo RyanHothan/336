@@ -27,70 +27,7 @@
                 </tr>
             </c:forEach>
         </table>
-        <h2> Printed using Custom Tags </h2>
-        <table border="1">
-            <myLib:myBean bean="${b}">
-                <tr>
-                    <td>${name}</td>
-                    <td>${value}</td>
-                </tr>
-            </myLib:myBean>
-        </table>
-        <table border="1">
-            <tr>
-                <td>First Name</td>
-                <td>${b.firstName}</td>
-            </tr>
-            <tr>
-                <td>Last Name</td>
-                <td>${b.lastName}</td>
-            </tr>
-            <tr>
-                <td>Email</td>
-                <td>${b.email}</td>
-            </tr>
-            <tr>
-                <td>Password</td>
-                <td>${b.password}</td>
-            </tr>
-            <tr>
-                <td>Repassword</td>
-                <td>${b.rePassword}</td>
-            </tr>
-            <tr>
-                <td>Alias</td>
-                <td>${b.alias}</td>
-            </tr>
-            <tr>
-                <td>country</td>
-                <td>${b.countryOfResidence}</td>
-            </tr>
-            <tr>
-                <td>city</td>
-                <td>${b.city}</td>
-            </tr>
-            <tr>
-                <td>language</td>
-                <td>${b.language}</td>
-            </tr>
-            <tr>
-                <td>Security Question</td>
-                <td>${b.securityQuestion}</td>
-            </tr>
-            <tr>
-                <td>Security Answer</td>
-                <td>${b.securityAnswer}</td>
-            </tr>
-            <tr>
-                <td>Contact By Email</td>
-                <td>${b.contactByEmail}</td>
-            </tr>
-            <tr>
-                <td>Contact By Other</td>
-                <td>${b.contactByOther}</td>
-            </tr>
 
-        </table>
         <h2>
             header
         </h2>
@@ -113,7 +50,6 @@
                     <td>${pageContext.session.getAttribute(i)}</td>
                 </tr>
             </c:forEach>
-
         </table>
         <h2> request object </h2>
         <table border="1">
@@ -123,6 +59,15 @@
                     <td>${pageContext.request.getAttribute(i)}</td>
                 </tr>
             </c:forEach> 
+        </table>
+        <h2>Bean Printed using Custom Tags </h2>
+        <table border="1">
+            <myLib:myBean bean="${b}">
+                <tr>
+                    <td>${name}</td>
+                    <td>${value}</td>
+                </tr>
+            </myLib:myBean>
         </table>
         <h2> servlet context</h2>
         <table border="1">
